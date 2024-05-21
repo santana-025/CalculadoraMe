@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora WEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> CALCULADORA </h1>
+    </header>
+
+    <section>
+        <div id="Calculadora">
+            <!--Tela-->
+            <div id="tela">
+
+
+
+
+            </div>
+            <!--Corpo-->
+            <div id="corpo" onload="botoes()">
+                <button class="botoes" onclick="adicionar_na_tela('√')">√</button>
+                <button class="botoes" onclick="adicionar_na_tela('!')">!</button>
+                <button class="botoes" onclick="adicionar_na_tela('%')">%</button>
+                <button class="botoes" onclick="adicionar_na_tela('/')">/</button>
+                <button class="botoes" onclick="adicionar_na_tela(7)">7</button>
+                <button class="botoes" onclick="adicionar_na_tela(8)">8</button>
+                <button class="botoes" onclick="adicionar_na_tela(9)">9</button>
+                <button class="botoes" onclick="adicionar_na_tela('*')">*</button>
+                <button class="botoes" onclick="adicionar_na_tela(4)">4</button>
+                <button class="botoes" onclick="adicionar_na_tela(5)">5</button>
+                <button class="botoes" onclick="adicionar_na_tela(6)">6</button>
+                <button class="botoes" onclick="adicionar_na_tela('-')">-</button>
+                <button class="botoes" onclick="adicionar_na_tela(1)">1</button>
+                <button class="botoes" onclick="adicionar_na_tela(2)">2</button>
+                <button class="botoes" onclick="adicionar_na_tela(3)">3</button>
+                <button class="botoes" onclick="adicionar_na_tela('+')">+</button>
+                <button class="botoes" onclick="remover()">CE</button>
+                <button class="botoes" onclick="adicionar_na_tela(0)">0</button>
+                <button class="botoes" onclick="adicionar_na_tela('.')">.</button>
+                <button id="igual" class="botoes" onclick="resultado()">=</button>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
