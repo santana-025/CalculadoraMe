@@ -17,33 +17,31 @@
         <div id="Calculadora">
             <!--Tela-->
             <div id="tela">
-
-
-
-
+                <div id="previa"></div>
+                <div style="font-size: 40px" id="telinha"></div>
             </div>
             <!--Corpo-->
-            <div id="corpo" onload="botoes()">
-                <button class="botoes" onclick="adicionar_na_tela('√')">√</button>
-                <button class="botoes" onclick="adicionar_na_tela('!')">!</button>
-                <button class="botoes" onclick="adicionar_na_tela('%')">%</button>
-                <button class="botoes" onclick="adicionar_na_tela('/')">/</button>
-                <button class="botoes" onclick="adicionar_na_tela(7)">7</button>
-                <button class="botoes" onclick="adicionar_na_tela(8)">8</button>
-                <button class="botoes" onclick="adicionar_na_tela(9)">9</button>
-                <button class="botoes" onclick="adicionar_na_tela('*')">*</button>
-                <button class="botoes" onclick="adicionar_na_tela(4)">4</button>
-                <button class="botoes" onclick="adicionar_na_tela(5)">5</button>
-                <button class="botoes" onclick="adicionar_na_tela(6)">6</button>
-                <button class="botoes" onclick="adicionar_na_tela('-')">-</button>
-                <button class="botoes" onclick="adicionar_na_tela(1)">1</button>
-                <button class="botoes" onclick="adicionar_na_tela(2)">2</button>
-                <button class="botoes" onclick="adicionar_na_tela(3)">3</button>
-                <button class="botoes" onclick="adicionar_na_tela('+')">+</button>
-                <button class="botoes" onclick="remover()">CE</button>
-                <button class="botoes" onclick="adicionar_na_tela(0)">0</button>
-                <button class="botoes" onclick="adicionar_na_tela('.')">.</button>
-                <button id="igual" class="botoes" onclick="resultado()">=</button>
+            <div id="corpo">
+                <button onclick="resetar()">C</button>
+                <button onclick="sinais('!')">!</button>
+                <button onclick="sinais('%')">%</button>
+                <button onclick="sinais('/')">/</button>
+                <button onclick="adicionando(7)">7</button>
+                <button onclick="adicionando(8)">8</button>
+                <button onclick="adicionando(9)">9</button>
+                <button onclick="sinais('*')">*</button>
+                <button onclick="adicionando(4)">4</button>
+                <button onclick="adicionando(5)">5</button>
+                <button onclick="adicionando(6)">6</button>
+                <button onclick="sinais('-')">-</button>
+                <button onclick="adicionando(1)">1</button>
+                <button onclick="adicionando(2)">2</button>
+                <button onclick="adicionando(3)">3</button>
+                <button onclick="sinais('+')">+</button>
+                <button onclick="remover()">CE</button>
+                <button onclick="adicionando(0)">0</button>
+                <button onclick="adicionando('.')">.</button>
+                <button onclick="resultado()">=</button>
 
 
 
